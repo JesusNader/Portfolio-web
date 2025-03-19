@@ -1,0 +1,273 @@
+:root {
+    --white: #fff;
+    --electric-violet: #9340ff;
+    --royal-violet: #892fff;
+    --neon-purple: #bd51ff;
+    --midnight-blue: #101728;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url("../assets/fonts/CodecPro-Regular.ttf") format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Codec Pro ExtraBold';
+    src: url("../assets/fonts/Codec-Pro-ExtraBold.ttf") format(truetype);
+    font-weight: bold;
+}
+
+html {
+    font-family: 'Codec Pro';
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--midnight-blue);
+}
+
+.logo-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-title {
+    color: var(--white);
+    font-family: 'Codec Pro ExtraBold';
+    font-size: 22px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    height: 110px;
+}
+
+.header .header-navbar {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header .header-navbar .navbar-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.header .header-navbar .navbar-title {
+    color: var(--white);
+    font-family: 'Codec Pro ExtraBold';
+    font-size: 22px;
+}
+
+/* MAIN */
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main .main-section {
+    margin-bottom: 50px;
+}
+
+.main .main-section .main-section-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .main-section .main-section-left .main-section_title {
+    margin-bottom: 8px;
+    color: var(--white);
+    font-family: 'Codec Pro ExtraBold';
+    font-size: 65px;
+    line-height: 70px;
+}
+
+.main .main-section .main-section-left .main-section_description {
+    margin-bottom: 12px;
+    color: var(--white);
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 28px;
+}
+
+.main .main-section .main-section-left .main-section_button {
+    margin: 40px 0;
+    padding: 16px 0;
+    min-width: 140px;
+    max-width: 240px;
+    border: none;
+    border-radius: 36px;
+    background: linear-gradient(115deg, var(--royal-violet) 0%, var(--neon-purple) 100%);
+    font-family: 'Codec Pro ExtraBold';
+    font-size: 12.5px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.main .main-section .main-section-right img{
+    display: none;
+}
+
+.main .proyects-section .proyects-section-title {
+    margin-bottom: 20%;
+    color: var(--white);
+    font-family: 'Codec Pro ExtraBold';
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.main .proyects-section .proyects-container {
+    display: flex;
+    gap: 60px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main .proyects-section .proyects-container .proyect-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 256px;
+    flex-shrink: 0;
+    height: 400px;
+    border: 6px solid var(--royal-violet);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.main .proyects-section .proyect-card-container .proyect-image img {
+    width: 100%;
+}
+
+.main .proyects-section .proyect-card-container .proyect-title {
+    width: 90%;
+    margin: 8px auto;
+    color: var(--white);
+    font-family: 'Codec Pro ExtraBold';
+    font-size: 20px;
+}
+
+.main .proyects-section .proyect-card-container .proyect-description {
+    width: 90%;
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main .proyects-section .proyect-card-container .proyect-button {
+    margin-top: 14%;
+    padding: 16px 0;
+    min-width: 140px;
+    max-width: 240px;
+    border: none;
+    border-radius: 36px;
+    background: linear-gradient(-95deg, var(--royal-violet) 0%, var(--neon-purple) 100%);
+    color: var(--white);
+    font-family: 'Codec Pro';
+    font-size: 12.5px;
+    cursor: pointer;
+}
+
+/* .main .contact-section .contact-left {
+    width: 50%;
+} */
+
+.main .contact-section {
+    margin-top: 80px;
+}
+
+.main .contact-section .contact-left .contact-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.main .contact-section .contact-left .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .contact-section .contact-left .contact-form .title {
+    color: var(--white);
+    font-size: 19px;
+}
+
+.main .contact-section .contact-left .contact-form .input {
+    padding: 8px 6px;
+    background-color: transparent;
+    border: 1px solid var(--electric-violet);
+    border-radius: 14px;
+    color: var(--white);
+}
+
+.main .contact-section .contact-left .contact-form textarea {
+    height: 120px;
+    font-family: 'Codec Pro';
+    resize: none;
+}
+
+.main .contact-section .contact-left .contact-form .contact-button {
+    align-self: center;
+    margin-top: 14%;
+    padding: 16px 0;
+    width: 100%;
+    min-width: 140px;
+    max-width: 240px;
+    border: none;
+    border-radius: 36px;
+    background: linear-gradient(95deg, #601FFF 0%, #9225FF 100%);
+    color: var(--white);
+    font-family: 'Codec Pro ExtraBold';
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.main .contact-section .contact-right{
+    margin: 80px 0;
+}
+
+.main .contact-section .contact-right .contact-title {
+    margin-bottom: 20px;
+    color: var(--royal-violet);
+    font-family: 'Codec Pro ExtraBold';
+    font-size: 42px;
+}
+
+.main .contact-section .contact-right .contact-more-info {
+    color: var(--white);
+    font-family: 'Codec Pro';
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.footer {
+    margin-bottom: 20px;
+}
+
+.footer .icon-social-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .icon-social-container .icon-social {
+    width: 38px;
+    height: 38px;
+}
